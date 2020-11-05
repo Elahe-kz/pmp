@@ -1,0 +1,604 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+        <link href="stylesheet.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <style>
+.body {
+    font-family: Raleway;
+}
+.yum-header {
+    widows: 100%;
+    height: 80px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    position: relative;
+}
+.yum-header-logo img {
+    padding-top: 23px;
+    height: auto;
+    max-width: 100%;
+}
+.yum-header-nav-link {
+    display: inline-block;
+    padding: 0px 15px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 80px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #191b1e;
+}
+.yum-header-sign-in-up, .yum-header-code, .yum-header-phone {
+    position: relative;
+    display: inline-block;
+    padding: 0px 10px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 80px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #191b1e;
+}
+.yum-header-code:before {
+    background-image: url(pin.png);
+    background-size: 20px 26px;
+    display: inline-block;
+    font-family: Raleway;
+    width: 20px;
+    height: 26px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+}
+.yum-header-sign-in-up:before {
+    background-image: url(user3.png);
+    background-size: 20px 26px;
+    display: inline-block;
+    width: 20px;
+    height: 26px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+}
+.yum-header-phone:before {
+    background-image: url(phone.png);
+    background-size: 22px 22px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+}
+.yum-header-nav-info-holder {
+    text-align: left;
+}
+.list-group-item { 
+  height: 68px;
+  text-align: left;
+  box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.08);
+  border: solid 1px rgba(238, 238, 238, 0.5);
+  background-color: #ffffff;
+}
+.tab-content {
+  padding-left: 180px;
+}
+.list-group {
+  margin-left: 139px;
+  width: 248px;
+  height: 530px;
+  border-radius: 10px;
+  box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.08);
+  border: solid 1px rgba(238, 238, 238, 0.5);
+  background-color: #ffffff;
+}
+.name-nexmark-dev:before {
+    background-image: url(user3.png);
+    background-size: 20px 26px;
+    display: inline-block;
+    width: 20px;
+    height: 26px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+    margin: 15px;
+}
+.phone:before {
+    background-image: url(phone.png);
+    background-size: 22px 22px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+    margin: 15px;
+}
+.email-nexmarkgmailcom:before {
+  background-image: url(envelope2.png);
+  background-size: 23px 23px;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin: 0px 8px;
+  content: "";
+  vertical-align: middle;
+  margin: 15px;
+}   
+.location {
+  background-image: url(pin.png);
+  background-size: 23px 23px;
+  display: inline-block;
+  /* width: 23px; */
+  /* height: 23px; */
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  margin: 0px 8px;
+  content: "";
+  vertical-align: middle;
+  margin: 15px;
+}
+.dashboard::before {
+    background-image: url(dashboard.png);
+    background-size: 17px 17px;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+    width: 17px;
+    height: 16px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+.Order-List::before {
+    background-image: url(001-invoice.png);
+    background-size: 19px 19px;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+    width: 19px;
+    height: 19px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+.Payment-Methods::before {
+    background-image: url(002-credit-card.png);
+    background-size: 19.3px 19.3px;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+    width: 19.3px;
+    height: 19.3px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+.Rewards::before {
+    background-image: url(Rewards.png);
+    background-size: 20px 20px;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+.User-information::before{
+    background-image: url(003-user.png);
+    background-size: 18.9px 19px;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+    width: 18.9px;
+    height: 19px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+.Shipping-Address::before{
+    background-image: url(007-pin.png);
+    background-size: 19px 19px;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+    width: 19px;
+    height: 19px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+.Log-Out::before {
+    background-image: url(005-logout.png);
+    background-size: 19px 19px;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+    width: 19px;
+    height: 19px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+.box-rewards-1 {
+  margin: 25px 15px 50px 20px;
+  width: 230px;
+  border-radius: 10px;
+  border: solid 1px #014c75;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #014c75;
+  vertical-align: middle;
+}
+.view-rewards {
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 20px;
+  width: 86px;
+  height: 32px;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px 0 rgba(161, 43, 42, 0.2);
+  background-image: linear-gradient(to right, #a12b2a, #9a1514);  
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  padding: 5px 15px 10px 20px;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.box-rewards-2{
+    margin-left: 20px;
+    margin-top: -40px;
+    width: 230px;
+    border-radius: 10px;
+    border: solid 1px #c89211;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+}
+.box-rewards-3:before {
+    background-image: url(mastercard.png);
+    background-size: 72px 46px;
+    display: inline-block;
+    margin: 25px 8px;
+    width: 72px; 
+    height: 46px;
+    object-fit: contain;
+    content: "";
+    vertical-align: top;
+    background-repeat: no-repeat;
+    padding-left: 80px;
+
+}
+.tex-rewards {
+    display: inline-block;
+    padding-top: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    letter-spacing: normal;
+    color: #191b1e;
+    text-align: left;
+}
+.btn-Edit{
+    border-radius: 50px;
+    box-shadow: 0 8px 25px 0 rgba(161, 43, 42, 0.2);
+    background-color: #ffffff;
+    content: "";
+    width: 84px;
+    height: 28px;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    margin-top: -115px;
+    margin-left: 190px;
+    vertical-align: middle;
+}
+.btn-Edit:before{
+    background-image: url(edit-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin: 4px 8px;
+    width: 19px;
+    height: 15px;
+    object-fit: contain;
+    background-size: 19px 15px;
+    content: "";
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+.between {
+    margin-left: -30px;
+}
+.container-order-list {
+  width: 810px;
+  height: 283px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px #eeeeee;
+  background-color: #ffffff;
+}
+.order-list-title {
+    background-color: #eeeeee;
+    border-radius: 12px 12px 0px 0px;
+    height: 60.9px;
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.53;
+    letter-spacing: normal;
+    text-align: center;
+    color: #191b1e;
+}
+.order-list-1 {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  height: 61px;
+  border-radius: 10px;
+  border: solid 1px #eeeeee;
+  background-color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: left;
+  color: #191b1e;
+}
+.status-payment-order-list-holder-1 {
+  margin-top: 15px;
+  margin-left: 35px;
+  width: 150px;
+  height: 36px;
+  border-radius: 50px;
+  background-color: #014c75;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.77;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.status-payment-order-list-holder-2 {
+  margin-top: 15px;
+  margin-left: 45px;
+  width: 150px;
+  height: 36px;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px 0 rgba(161, 43, 42, 0.2);
+  background-image: linear-gradient(to right, #a12b2a, #9a1514);
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.77;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.show-more {
+    margin-top: 10px;
+    padding-left: 353px;
+    font-size: 19px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #c7c7c7;
+}
+
+    </style>    
+  </head>
+  <body class="body">
+<header class="yum-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-12">
+                <div class="yum-header-logo">
+                    <img src="Patak_logo_Horizontal.png">
+                </div>
+            </div>
+            <div class="col-4 d-none d-lg-block p-0">
+                <div class="yum-header-nav-link-holder">
+                    <div class="yum-header-nav-link">Online Shop</div>
+                    <div class="yum-header-nav-link">retail store</div>
+                    <div class="yum-header-nav-link">wholesale</div>
+                </div>
+            </div>
+            <div class="col-6 d-none d-lg-block">
+                <div class="yum-header-nav-info-holder">
+                    <div class="yum-header-code :before">19801</div>
+                    <div class="yum-header-sign-in-up :before">sign in /sign up</div>
+                    <div class="yum-header-phone :before">(770) 941-7993</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+ 
+ 
+<div class="row" id="table1">
+    <div class="col-lg-2">
+        <div class="list-group" id="myList" role="tablist">
+            <a class="list-group-item list-group-item-action border-0" id="Profile" data-toggle="list" href="#Profile" role="tab"><h5>Profile</h5></a>
+            <a class="list-group-item list-group-item-action active dashboard :before" id="Dashboard" data-toggle="list" href="#Dashboard" role="tab">Dashboard</a>
+            <a class="list-group-item list-group-item-action border-0 Order-List :before" id="Order List" data-toggle="list" href="#Order List" role="tab" aria-controls="Order List">Order List</a>
+            <a class="list-group-item list-group-item-action border-0 Payment-Methods :before" id="Payment Methods" data-toggle="list" href="#Payment Methods" role="tab" aria-controls="Payment Methods">Payment Methods</a>
+            <a class="list-group-item list-group-item-action border-0 Rewards :before" id="Rewards" data-toggle="list" href="#Rewards" role="tab" aria-controls="Rewards">Rewards</a>
+            <a class="list-group-item list-group-item-action border-0 User-information :before" id="User information" data-toggle="list" href="#User information" role="tab" aria-controls="User information">User information</a>
+            <a class="list-group-item list-group-item-action border-0 Shipping-Address :before" id="Shipping Address" data-toggle="list" href="#Shipping Address" role="tab" aria-controls="Shipping Address">Shipping Address</a>
+            <a class="list-group-item list-group-item-action border-0 Log-Out :before" id="Log Out" data-toggle="list" href="#Log Out" role="tab" aria-controls="Log Out">Log Out</a>
+        </div>
+    </div>
+    <div class="col-lg-10">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="Dashboard" role="tabpanel" aria-labelledby="Dashboard">
+             <h5>Dashbord</h5>
+             <p>From your My Account Dashboard you have the ability to view a snapshot of your recent account <br>activity and update your account information. Select a link below to view or edit information.</p>
+            </br>  
+             <h5>Your Information</h5>
+                <div class="col-xm-12 col-sm-12" id="box1">
+                    <div class="name-nexmark-dev :before">name : nexmark dev</div>
+                    <div class="phone :before">phone: 12345679852</div>
+                    <div class="email-nexmarkgmailcom :before">email: nexmark@gmail.com </div>
+                </div>
+            </br>   
+        </div>
+            <div class="tab-pane fade show active" id="Shipping Addres" role="tabpanel" aria-labelledby="Shipping Address">
+                    <h5>Shipping Address</h5>
+                <div class="col-xm-12 col-sm-12" id="box2" class="d-flex">
+                    <div class="location :before" id="text">
+                        <div>Street Address: 1630 Alexander Avenue</div>
+                    </br>
+                        <div>city / state: CA / Dublin</div>
+                    </br>
+                        <div>zip code: 94568</div>
+                    </div>
+                </div>
+            </div>
+        </br>  
+            <div class="tab-pane fade show active" id="Rewards" role="tabpanel" aria-labelledby="Rewards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5.5">
+                            <h5>Rewards</h5>
+                            <div id="box-rewards">
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-light d-flex box-rewards-1">Earned Today <span class="badge badge-light">20</span></button> 
+                                    <button type="button" class="btn btn-danger d-flex view-rewards">View</button>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-light box-rewards-2">Total Points Earned <span class="badge badge-light">5230</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 between"></div>
+                        <div class="col-5.5">
+                            <h5>Your Default Payment Methods</h5>
+                            <div id="box-rewards">
+                                <div class="box-rewards-3 d-flex :before">
+                                    <div class="tex-rewards">
+                                        <p>elahe moodi</p>
+                                        <p>Card Number: **** **** **** 5350</p>
+                                        <p>Expires: 09/25</p>
+                                        <button type="button" class="btn-Edit d-flex border-0 :before">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </br>
+    <div class="tab-pane fade show active" id="Order-List" role="tabpanel" aria-labelledby="Order List">
+                <h5>Last Your Order</h5>
+        <div class="container-order-list">
+            <div class="row-2">
+                <div class="col order-list-title d-flex">
+                    <div id="number-order-list">#</div>
+                    <div id="date-order-list">Date</div>
+                    <div id="invoice-order-list">Invoice</div>
+                    <div id="price-order-list">Price</div>
+                    <div id="delivery-order-list">Delivery</div>
+                    <div id="status-payment-order-list">Status payment</div>
+                    <div id="status-order-list">Status</div>
+                </div>
+            </div>  
+            <div class="row-8">
+                    <div class="col last-order-list d-flex">
+                            <div class="order-list-1 d-flex">
+                                    <div id="number-order-list-1">01</div>
+                                    <div id="date-order-list-1">2020/01/21</div>
+                                    <div id="invoice-order-list-1">PMP-9788421</div>
+                                    <div id="price-order-list-1">89.20 $</div>
+                                    <div id="delivery-order-list-1">3.00 $</div>
+                                    <div class="status-payment-order-list-holder-1" id="status-payment-order-list-1">+ Fix payment</div>
+                                    <div id="status-order-list-1">Preparing</div>
+                            </div>
+                        </div>
+                        <div class="col last-order-list d-flex">
+                                <div class="order-list-1 d-flex">
+                                        <div id="number-order-list-1">02</div>
+                                        <div id="date-order-list-1">2019/12/19</div>
+                                        <div id="invoice-order-list-1">PMP-8871227</div>
+                                        <div id="price-order-list-1">102.00 $</div>
+                                        <div id="delivery-order-list-1">free</div>
+                                        <div class="status-payment-order-list-holder-2" id="status-payment-order-list-1">Paid : 2019-12-19</div>
+                                        <div id="status-order-list-1">Delivered</div>
+                                </div>
+                            </div>
+                <div class="row-2 show-more">
+                        <p>show more</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+            <div class="tab-pane fade show active" id="User information" role="tabpanel" aria-labelledby="User information">...</div>
+            <div class="tab-pane fade show active" id="Shipping Address" role="tabpanel" aria-labelledby="Shipping Address">...</div>
+            <div class="tab-pane fade show active" id="Log Out" role="tabpanel" aria-labelledby="Log Out">...</div>
+        </div>
+    </div>
+</div>
+
+<script>
+        $(function () {
+          $('#myList a:last-child').tab('show')
+        })
+      </script>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="C:\Users\elahe\Documents\Visual Studio\WebSites\WebSite2\js"></script>
+    <script src="C:\Users\elahe\Documents\Visual Studio\WebSites\WebSite2\js"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="C:\Users\elahe\Documents\Visual Studio\WebSites\WebSite2\js"></script>
+    <script src="C:\Users\elahe\Documents\Visual Studio\WebSites\WebSite2\js"></script>
+    <script src="C:\Users\elahe\Documents\Visual Studio\WebSites\WebSite2\js"></script>
+    -->
+  </body>
+</html>

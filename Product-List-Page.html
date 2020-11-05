@@ -1,0 +1,476 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+        <link href="stylesheet.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <style>
+.body {
+    font-family: Raleway;
+}
+.yum-header {
+    widows: 100%;
+    height: 80px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    position: relative;
+}
+.yum-header-logo img {
+    padding-top: 23px;
+    height: auto;
+    max-width: 100%;
+}
+.yum-header-nav-link {
+    display: inline-block;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 80px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #191b1e;
+}
+.yum-header-sign-in-up, .yum-header-code, .yum-header-phone {
+    position: relative;
+    display: inline-block;
+    padding: 0px 10px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 80px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #191b1e;
+}
+.yum-header-code:before {
+    background-image: url(pin.png);
+    background-size: 20px 26px;
+    display: inline-block;
+    font-family: Raleway;
+    width: 20px;
+    height: 26px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+}
+.yum-header-sign-in-up:before {
+    background-image: url(user3.png);
+    background-size: 20px 26px;
+    display: inline-block;
+    width: 20px;
+    height: 26px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+}
+.yum-header-phone:before {
+    background-image: url(phone.png);
+    background-size: 22px 22px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0px 8px;
+    content: "";
+    vertical-align: middle;
+}
+.yum-header-nav-info-holder {
+    text-align: left;
+}
+.yum-header-menu {
+    position: absolute;
+    right: 10px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-list {
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #191b1e;  
+  border-radius: 10px;
+  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.08);
+  border: solid 1px rgba(238, 238, 238, 0.5);
+  background-color: #ffffff;   
+}
+.All-product {
+  display: inline-block;
+  height: 19px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #a12b2a;
+  vertical-align: middle;
+}
+.cold-cuts {
+  display: inline-block;
+  height: 19px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #191b1e;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+.search-result {
+  display: inline-block;
+  height: 19px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #191b1e;
+  line-height: 3.75;
+  vertical-align: middle;
+}
+
+.btn-product-list {
+  height: 15px;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 4.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: #191b1e;
+  width: 141px;
+  height: 35px;
+  border-radius: 50px;
+  border: solid 1px #a12b2a;
+}
+.Poularity {
+    width: 90px;
+    height: 35px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #a12b2a 4%, #9a1514 93%); 
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.Price-Low-To-High, .Price-Hight-To-Low {
+  width: 140px;
+  height: 35px;
+  border-radius: 50px;
+  border: solid 1px #a12b2a;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #191b1e;
+}
+.Off {
+  width: 65px;
+  height: 35px;
+  border-radius: 50px;
+  border: solid 1px #a12b2a;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #191b1e;
+}
+.mx-2 {
+  margin-left: ($spacer * .5) !important;
+  margin-right: ($spacer * .5) !important;
+}
+.img-slide-holder {
+    object-fit: contain;
+    border-radius: 10px;
+}
+.search {
+    object-fit: contain;
+    background-image: url(magnifying-glass.png);
+    background-size: 25px 25px;
+    background-position: center;
+    box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.11);
+    background-color: #ffffff;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 8px 0px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 53px;
+    height: 53px;
+}
+.product-item {
+  height: 163px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px 0 var(--black-10);
+  border: solid 1px rgba(238, 238, 238, 0.5);
+  background-color: #ffffff;
+}
+.product-name {
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.39;
+  letter-spacing: normal;
+  text-align: left;
+  color: #191b1e;
+  margin-left: -25px;
+  padding-top: 5px;
+}
+.delivery-product {
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.67;
+  letter-spacing: 0.02px;
+  text-align: left;
+  color: #a12b2a;
+  margin-left: -25px;
+}
+.pick-up-product {
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 4.93;
+  letter-spacing: 0.01px;
+  text-align: left;
+  color: #989898;
+  margin-left: -25px;
+  
+}
+.star-point {
+  margin-left: -28px;
+  height: 15px;
+  margin-top: 20px;
+}
+.add-item {
+  display: inline;
+  border-radius: 50px;
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.12);
+  border: solid 1px rgba(238, 238, 238, 0.5);
+  background-color: #ffffff;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  padding: 10px 10px 10px 6px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #003a5d;
+}
+.add-item-holder {
+    text-align: center;
+    margin-top: -37px;
+    margin-right: -110px;
+}
+.add-to-cart{
+    display: inline;
+    border-radius: 50px;
+    box-shadow: 0 8px 30px 0 rgba(161, 43, 42, 0.2);
+    background-image: linear-gradient(to left, #9a1514, #a12b2a -2%);
+    font-size: 16px;
+    line-height: 1.18;
+    padding: 10px 20px 10px 6px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.add-to-cart-holder {
+    text-align: right;
+    margin-top: -35px;
+}
+.add-to-cart::before {
+    background-image: url(basket.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    background-size: 22px 18px;
+    display: inline-block;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    content: "";
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.bg {
+
+}
+    </style>    
+  </head>
+  <body class="body">
+<header class="yum-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-12">
+                <div class="yum-header-logo">
+                    <img src="Patak_logo_Horizontal.png">
+                </div>
+            </div>
+            <div class="col-4 d-none d-lg-block p-0">
+                <div class="yum-header-nav-link-holder">
+                    <div class="yum-header-nav-link">Online Shop</div>
+                    <div class="yum-header-nav-link">retail store</div>
+                    <div class="yum-header-nav-link">wholesale</div>
+                </div>
+            </div>
+            <div class="col-6 d-none d-lg-block">
+                <div class="yum-header-nav-info-holder">
+                    <div class="yum-header-code :before">19801</div>
+                    <div class="yum-header-sign-in-up :before">sign in /sign up</div>
+                    <div class="yum-header-phone :before">(770) 941-7993</div>
+                </div>
+            </div>
+            <div class="yum-header-menu d-lg-none">
+                <button type="button" class="btn search ml-5"></button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-1 d-none d-lg-block col-md-0"></div>
+        <div class="col-lg-3 col-md-10">
+                <div class="All-product">All Products</div> 
+                <div class="cold-cuts">cold cuts</div> 
+        </div>
+        <div class="col-1 d-none d-lg-block m-3"></div>
+        <div class="col-1 d-none d-lg-block m-3"></div>
+        <div class="col-1 m-2"></div>
+        <div class="col-lg-3 col-md-10 search-result">319 Search Results for cold cuts</div>
+        <div class="col-lg-1 d-lg-block d-none">
+                <button type="button" class="btn search d-lg-block d-none"></button>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-1 d-none d-lg-block col-md-0"></div>
+        <div class="col-lg-2 d-none d-lg-block mt-5 product-list">
+                        <ul class="list-group" id="product-list">
+                                <li class="list-group-item border-0" id="product-list-item">Filters</li>
+                                <span class="border-bottom"></span>
+                                <li class="list-group-item border-0" id="product-list-item">Brands</li>
+                                <span class="border-bottom"></span>
+                                <li class="list-group-item border-0" id="product-list-item">Specs</li>
+                                <span class="border-bottom"></span>
+                                <li class="list-group-item border-0" id="product-list-item">Local Delivery</li>
+                                <span class="border-bottom"></span>
+                                <li class="list-group-item border-0" id="product-list-item">Organic</li>
+                                <span class="border-bottom"></span>
+                                <li class="list-group-item border-0" id="product-list-item">Gluten Free</li>
+                                <span class="border-bottom"></span>
+                                <li class="list-group-item border-0" id="product-list-item">Delivery Condition</li>
+                        </ul>
+        </div>
+        <div class="col-lg-7 col-md-10 col-sm-10 mt-5 py-lg-1">
+                    <div class="filter-products d-inline-block ml-2">
+                        <span class="badge badge-pill badge-light Poularity m-2">Poularity</span>
+                        <span class="badge badge-pill badge-light Price-Low-To-High m-2">Price Low To High</span>
+                        <span class="badge badge-pill badge-light Price-Hight-To-Low m-2">Price Hight To Low</span>
+                        <span class="badge badge-pill badge-light Off m-2">Off %</span>
+                    </div>
+                <div class="img-slide-holder py-4 m-md-3">
+                        <img class="img-fluid py-3" src="4134760.png">
+                    <div class="container-lg d-lg-block product-item">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-9 col-sm-10 mt-3">
+                                    <img class="img-fluid" src="two-grilled-marbled-beef-steaks-striploin_79782-926.png">
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="star-point d-inline-flex">
+                                            <img src="favorite-yellow.png">
+                                            <img src="favorite-yellow.png">
+                                            <img src="favorite-yellow.png">
+                                            <img src="favorite-gray.png">
+                                            <img src="favorite-gray.png">
+                                </div>
+                                        <h6 class="product-name">product name</h6>
+                                        <div class="delivery-product">delivery :  $ 4.29   $ 3.29</div>
+                                        <div class="pick-up-product">pick up : $ 4.29</div>
+                                        
+                                    <div class="add-item-holder">
+                                        <div class="add-item">
+                                                <button type="button" class="btn btn-light rounded-circle">-</button>
+                                                8
+                                                <button type="button" class="btn btn-light rounded-circle">+</button>   
+                                        </div>
+                                    </div>
+                                            <div class="add-to-cart-holder">
+                                                <div class="add-to-cart">
+                                                            Add to cart
+                                                </div>
+                                            </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>  
+        <div class="col-lg-1 d-none d-lg-block col-md-0"></div>                   
+    </div>    
+</div>
+
+<script>
+        $(function () {
+          $('#myList a:last-child').tab('show')
+        })
+      </script>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="C:\Users\elahe\Documents\Visual Studio\WebSites\WebSite2\js"></script>
+    <script src="C:\Users\elahe\Documents\Visual Studio\WebSites\WebSite2\js"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="C:\Users\elahe\Documents\Visual Studio\WebSites\WebSite2\js"></script>
+    <script src="C:\Users\elahe\Documents\Visual Studio\WebSites\WebSite2\js"></script>
+    <script src="C:\Users\elahe\Documents\Visual Studio\WebSites\WebSite2\js"></script>
+    -->
+  </body>
+</html>
